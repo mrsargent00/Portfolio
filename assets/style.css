@@ -106,9 +106,13 @@ header {
 /*about me*/
 .About{
     color: var(--pink);
-    font-family: 'Lucida Sans'sans-serif;
+    font-family: 'Lucida Sans'sans-serif; 
+    padding-left: 10px;
 }
 
+.writing{
+    font-size: 20px;
+}
 .image img{
     height: 350px;
     width: 250px;
@@ -116,16 +120,23 @@ header {
     border-radius: 25px 25px 25px 25px;
     border: 2px solid var(--green);
 }
+
 /*footer information*/
 .footer{
-    padding: 30px;
+    padding: 10px;
     background-color: var(--purple);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
     text-align: center;
     color: var(--pink);
+    border-radius: 25px 25px 25px 25px;
+    border: 2px solid var(--green);
 
 }
+.Contact{
 
+    text-align: center;
+
+}
 .footer h2 {
     font-size: 20px;
 }
