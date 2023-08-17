@@ -32,32 +32,15 @@ header {
 }
 /*Tabs on the top of the page, plus styling*/
 .tab {
-    overflow: hidden;
-    padding: 7px;
-
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 30px;
 }
 
-.tab button {
-    background-color: var(--green);
-    float: center;
-    border: 1px solid var(--green);
-    outline: none;
-    cursor: auto;
-    padding: 10px 12px;
-    transition: 0.3s;
-    color: var(--grey);
-}
-
-.tab button:hover {
-    background-color: var(--pink);
-}
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid var(--purple);
-    border-top: none;
-}
 /*Project 1-4 and style*/
 .projects{
     flex: 4;
