@@ -32,3 +32,27 @@ body {
     background-color: #006d1a;
     color: white;
 }
+/*center image of me*/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+
+
+
+/*resizes the image of Me*/
+.resize {
+    width: 400px;
+    height: auto;
+}
+
+.resize {
+    width: 300px;
+    height: auto;
+}
+
+
+
