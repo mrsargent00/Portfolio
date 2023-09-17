@@ -33,7 +33,7 @@ nav a:hover {
     color: blue
 }
 nav a.active {
-    background-color: #006d1a;
+    background-color: purple;
     color: white;
 }
 
@@ -68,7 +68,7 @@ img {
     background-color: white;
 }
 
-/*possible add a Portfolio Gallery*/
+                                            /*possible add a Portfolio Gallery*/
 
 
 /*Places Footer at the bottom of page*/
@@ -95,7 +95,11 @@ footer{
      background-color: #ddd;
      color: blue
  }
-footer a.active {
-     background-color: #006d1a;
-     color: white;
+
+
+ /*attempting to Add text to the left of the image*/
+ 
+ .me {
+    text-align:  left;
+    color: white;
  }
