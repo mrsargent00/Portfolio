@@ -24,6 +24,10 @@ This Portfolio will be for professional use, I wanted it to be more my style for
 <a href="https://www.w3schools.com/howto/howto_css_images_side_by_side.asp">How to allign images side by side</a>
 <a href="https://www.teachucomp.com/add-space-in-html-tutorial/#:~:text=Since%20there%20is%20no%20blank,five%20times%20between%20the%20words.">How to add space in HTML</a>
 
+## Deployment
+
+https://mrsargent00.github.io/Portfolio/
+
 ## License
 
 MIT License
