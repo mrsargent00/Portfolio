@@ -1,43 +1,45 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
+        <head>
+            <title>Portfolio</title>
+            <link rel="stylesheet" href="./assets/style.css">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
 
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="./assets/style.css">
-    </head>
-<!--background photo-->
-    <div id="background"></div>    
     <body>
-<!--Nav Bar at the top of page-->
+
+         <header>
+             <h3><img src="./assets/images/me.JPG" alt="picture of me">"Courage is more exhilarating that fear and in the long run it is easier. We do not have to become heroes overnight. Just a step at a time, meeting each thing that comes up, seeing it is not as dreadful as it appeared, discovering we have the strength to stare it down" - Eleanor Roosevelt, You Learn by Living, 1960.</h3>
+         </header>
+
+        <section>
             <nav>
-                        <a class="active" href="/Home">Home</a>
-                        <a href="/About">About Me</a>
-                        <a href="/Projects">Projects</a>
-                        <a href="/Contact">Contact</a>
-            </nav>
-<!--Keeps Nav Bar "stuck" to top of page-->
-            <div class="main"></div>
+                 <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Projects</a></li>
+                     <li><a href="#">Skills and Certificates</a></li>
+                </ul>
+          </nav>
+  
+            <article>
+                 <h1>About Me</h1>
+                     <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                     <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+             </article>
+             
+         </section>
 
-            <img class="resize" src="./assets/images/me.JPG"/>
-        
-            <div class="move">
-            
-                <p>"I am who I am today because </p>
-                <p>of the choices I made yesterday."</p>
-                <p>Eleanor Roosevelt, First Lady of the U.S</p>
-            </div>
-            <!--Link to deployed Project 1-->
-            <div id="butt">
-            <button onclick="document.location='https://benrodriguezmoran.github.io/country-curency-converter/'" target="_blank">Currency Converter</button>
-            </div>
 
-<!--Footer of page, along with links that open in new tabs-->  
-        <footer>    
-            <div id="Contact" class="Contact">
-            <a href="https://github.com/mrsargent00" target="_blank">Github</a>
-            <a href="mailto:mrsargent00@gmail.com">Gmail</a>
-            <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage&_ga=2.184116003.40079231.1692227507-1010387465.1692227507" target="_blank">Indeed</a>
-                </div>
+
+        <footer>
+             <p>
+                 <div id="Contact" class="Contact">
+                    <a href="https://github.com/mrsargent00" target="_blank">Github</a>
+                     <a href="mailto:mrsargent00@gmail.com">Gmail</a>
+                     <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage&_ga=2.184116003.40079231.1692227507-1010387465.1692227507" target="_blank">Indeed</a>
+             </p>
         </footer>
-  </body>
+
+    </body>
 </html>

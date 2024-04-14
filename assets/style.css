@@ -1,82 +1,87 @@
-
-/*background and style*/
-body {
-    width: 100%;
-    height: 400px;
-    background-image: url(./images/Background.jpg);
-    background-size: 100% 100% 50%;
-}
-
-
-.move {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:url("/assets/images/Background.jpg");
+    background-repeat: none; 
+    background-size: cover;
+    
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
     text-align: center;
-    margin-top: -250px;
-    font-size: larger;
-    color: #f2f2f2;
-    margin-bottom: 250px;
-}
-
-/*Tabs on the top of the page, plus styling*/
-nav {
-   background-color: #333;
-   overflow: hidden;
-   position: fixed;
-   top: 0;
-   width: 100%;
-}
-
-nav a {
+    font-size: 15px;
+    color: white;
+  }
+  
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
     float: left;
-    display: block;
-    color: #f2f2f2;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-nav a:hover {
-    background-color: #ddd;
-    color: blue
-}
-nav a.active {
-    background-color: purple;
     color: white;
+  }
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  /* quote on top of page*/
+
+h3 {
+    width: 980px;
+    height: 60px;
+    position: center;
+    margin-left: 10px;
 }
 
-.main{
-    margin-top: 30px;
-}
-
-/*center image of me, and rounds it off*/
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
+  float: right;
+  height: 100px;
+  width: 90px;
+  margin-left: 30px;
 }
 
-/*resizes the image of Me*/
-.resize {
-    width: 400px;
-    height: auto;
-    margin-top: 150px;
-    margin-right: 450px;
-}
-
-.resize {
-    width: 300px;
-    height: auto;
-}
-
-.About{
-    text-align: center;
-    color: white;
-    background-color: white;
-}
-
-                                            /*possible add a Portfolio Gallery*/
-
+/*footer*/
 
 /*Places Footer at the bottom of page*/
 
@@ -102,8 +107,3 @@ footer{
      background-color: #ddd;
      color: blue
  }
-
-
- /*attempting to Add text to the left of the image*/
-
-
