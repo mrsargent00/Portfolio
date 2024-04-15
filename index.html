@@ -1,45 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-        <head>
-            <title>Portfolio</title>
-            <link rel="stylesheet" href="./assets/style.css">
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-        </head>
+<html>
+<head>
+<title>Megan's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
 
-    <body>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="./assets/images/me.JPG" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-         <header>
-             <h3><img src="./assets/images/me.JPG" alt="picture of me">"Courage is more exhilarating that fear and in the long run it is easier. We do not have to become heroes overnight. Just a step at a time, meeting each thing that comes up, seeing it is not as dreadful as it appeared, discovering we have the strength to stare it down" - Eleanor Roosevelt, You Learn by Living, 1960.</h3>
-         </header>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 
-        <section>
-            <nav>
-                 <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                     <li><a href="#">Skills and Certificates</a></li>
-                </ul>
-          </nav>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Megan Sargent.</h1>
+    <p>Web Developer and aspiring Computer Automated Designer.</p>
+    <img src="./assets/images/me.JPG" alt="author" class="image-of-me" width="380" height="400">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I am a dedicated and proficient web developer, having honed my skills through rigorous training at the MSU coding bootcamp. My professional journey is characterized by a fervent commitment to delivering exemplary results.</p>
+    <p>Thriving within dynamic and fast-paced environments, I excel in tackling intricate challenges and fostering collaboration across diverse teams to produce superior software solutions. My expertise spans a comprehensive array of technologies and methodologies acquired during my tenure in the coding bootcamp.</p>
+    <p>Throughout this intensive program, I have acquired proficiency in a multitude of essential disciplines including HTML, CSS, and Git, as well as Advanced CSS, JavaScript, Web APIs, Third-Party APIs, Server-Side APIs, Node.js, Object-Oriented Programming (OOP), Express.js, SQL, Object-Relational Mapping (ORM), Model-View-Controller (MVC), Computer Science for JavaScript, NoSQL, Progressive Web Applications (PWA), React, MERN, and State management.</p>
+    <p>These competencies equip me to contribute effectively to diverse projects and leverage innovative solutions to meet and exceed client expectations.
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Front End Development</HTML></p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Back End Development</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Medical Assisting</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Work Experience, web development  -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Work Experience</h3>  
+    <!-- Add photos of websites I worked, and information on what I did there-->
+
+
+  <!-- End About Section -->
+  </div>
   
-            <article>
-                 <h1>About Me</h1>
-                     <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                     <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-             </article>
-             
-         </section>
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
 
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="./assets/images/Background.jpg" style="width:100%">
+        <img src="./assets/images/Background.jpg" style="width:100%">
+        <img src="./assets/images/Background.jpg" style="width:100%">
+      </div>
 
+      <div class="w3-half">
+        <img src="./assets/images/Background.jpg" style="width:100%">
+        <img src="./assets/images/Background.jpg" style="width:100%">
+        <img src="./assets/images/Background.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
 
-        <footer>
-             <p>
-                 <div id="Contact" class="Contact">
-                    <a href="https://github.com/mrsargent00" target="_blank">Github</a>
-                     <a href="mailto:mrsargent00@gmail.com">Gmail</a>
-                     <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage&_ga=2.184116003.40079231.1692227507-1010387465.1692227507" target="_blank">Indeed</a>
-             </p>
-        </footer>
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
 
-    </body>
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Michigan, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 734-410-8201</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mrsargent00@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+    <footer>
+  <!-- End footer -->
+    </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
 </html>
